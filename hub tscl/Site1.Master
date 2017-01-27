@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="hub_tscl.Site1" %>
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    
+    <title></title>
+    <link href="styles/site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-family: "Palatino Linotype";
+            font-size: xx-large;
+            z-index: 1;
+            left: 106px;
+            top: 8px;
+            position: absolute;
+            width: 580px;
+            height: 51px;
+        }
+    </style>
+</head>
+<body background="images/16-emote.jpg">
+    <form id="Form2" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                
+                <h1>
+                    <asp:Image ID="Image1" runat="server" 
+                        ImageUrl="~/images/Hub_logo.jpg" 
+                        style="margin-right: 0px; z-index: 1; left: 26px; top: 10px; position: absolute; width: 69px; height: 43px;" />
+                    &nbsp;<span class="style1"> HUB Telecom Services Limited</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1>
+            </div>
+            
+            <div class="clear hideSkiplink">
+                <table>
+                     <tr>
+                     <th>
+                     
+                     <asp:Menu ID="Menu1" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    Height="35px" Width="301px" BackColor="White" BorderColor="White">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="content/Home.aspx" Text="Home" />
+                      </Items> </asp:Menu> </th>
+                        <th>
+                     <asp:Menu ID="Menu2" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    Height="35px" Width="301px">
+                    <Items>
+                   <asp:MenuItem NavigateUrl="content/about.aspx" Text="About Us" />
+                      </Items> </asp:Menu> </th>
+                            <th>
+                     <asp:Menu ID="Menu3" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    Height="35px" Width="301px" BorderColor="White">
+                    <Items>
+                   <asp:MenuItem NavigateUrl="content/contact.aspx" Text="Contact Us" />
+                      </Items> </asp:Menu> </th>
+                      </tr></table>
+                </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <p>
+                    <br />
+                </p>
+                <asp:Panel ID="Panel1" runat="server" 
+                    style="z-index: 1; left: 277px; top: 143px; position: absolute; height: 225px; width: 371px; margin-left: 0px">
+                </asp:Panel>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear" style="background-color: #FF0000; color: #FFFFFF;">
+            &nbsp;&nbsp;© HUB TSCL 2012, All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="tandc" runat="server" ForeColor="White" 
+                NavigateUrl="~/content/tandc.aspx">Terms and Conditions</asp:HyperLink>
+            &nbsp;&nbsp;<asp:HyperLink ID="guide" runat="server" ForeColor="White" 
+                NavigateUrl="~/content/guide.aspx">Guidelines</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            Follow Us On&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:ImageButton ID="ImageButton7" runat="server" Height="29px" 
+                ImageUrl="~/images/fb.bmp" PostBackUrl="http://www.facebook.com/groups/hubtelecom" 
+                Width="38px" CausesValidation="False" />
+&nbsp;
+            <asp:ImageButton ID="ImageButton8" runat="server" Height="30px" 
+                ImageUrl="~/images/twt.jpg" 
+                PostBackUrl="http://www.twitter.com/hubtelecom" 
+                Width="34px" CausesValidation="False" />
+        </div>
+    </div>
+    <div class="footer">
+        
+        
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
